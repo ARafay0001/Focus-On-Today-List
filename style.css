@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #48A30012;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    padding: 16px;
+    min-height: 100vh;
+}
+img {
+    user-select: none;
+}
+.title {
+    text-align: center;
+    color: #48A300;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.container {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #FBFBFB;
+    max-width: 660px;
+    /* min-height: 700px; */
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 28px 42px;
+}
+
+.title span {
+    color: #61481C;
+}
+
+.subTitle {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    text-align: left;
+
+}
+.subTitle img {
+      vertical-align: middle;
+      margin-left: 16px;
+      font-size: 32px;
+}
+.bar-label {
+    height: 24px;
+
+}
+.bar-label p {
+    font-size: 14px;
+    color: rgba(133, 133, 133, 1);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 28px;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius: 15px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.progress {
+    background-color: rgba(72, 163, 0, 1);
+    height: 28px;
+    width: 0%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+    transition: width 0.3s ease-in-out;
+
+}
+
+.progress-complete {
+    color: rgba(238, 255, 224, 1);
+    font-size: 12px;
+    min-width: 200px;
+    margin-left: 16px;
+    /* position: absolute; */
+    /* vertical-align: middle; */
+}
+.error {
+    color: rgba(255, 81, 81, 1);
+    font-size: 14px;
+    position: absolute;
+    /* margin-top: 12px; */
+
+}
+
+.goal-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border:1px solid rgba(0, 0, 0, 0.144);
+    display: flex;
+    margin-top: 42px;
+    padding: 28px 22px;
+    border-radius: 16px;
+
+}
+.goal-container input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;    
+
+}
+.goal-container input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    color: rgba(217, 217, 217, 1);
+}
+.goal-container input:focus {
+    outline: none;
+}
+.check {
+    margin-right: 16px;
+    width: 26px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 1);
+    border : 1px solid rgba(97, 72, 28, 0.3);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.disable {
+    display: none;
+}
+.check img {
+    display: none;
+}
+.complete .check {
+    background-color: rgba(72, 163, 0, 1);
+    padding: 1px 0 0 0;
+}
+.complete .check img {
+    display: inline-block;
+}
+.complete input {
+    color: rgba(72, 163, 0, 1);
+    text-decoration: line-through;
+}
+.quote {
+    text-align: center;
+}
+.keys {
+    display: flex;
+    justify-content: center;
+    /* gap: 12px; */
+}
+.key {
+    background-color: white;
+    width:64px;
+    height: 64px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+/* 
+.add:hover {
+    background-color: #49a300b4;
+    color: white;
+}
+
+.sub:hover {
+    background-color: rgba(255, 2, 2, 0.623);
+    color: white;
+} */
